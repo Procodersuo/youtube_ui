@@ -6,7 +6,11 @@ class ShortsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     List<Color> colors =[Colors.yellow,Colors.pink,Colors.amber,Colors.amberAccent,Colors.red];
     return  Scaffold(
-      body: ListView.builder(
+      body:
+
+      PageView.builder(
+        physics: const BouncingScrollPhysics(),
+        scrollDirection: Axis.vertical,
           itemCount: colors.length,
           itemBuilder: (context,index)
       {

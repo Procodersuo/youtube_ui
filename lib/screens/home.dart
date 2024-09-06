@@ -22,7 +22,6 @@ class Home extends StatelessWidget {
 
 body: CustomScrollView(
   slivers: [
-
     SliverAppBar(
       flexibleSpace: FlexibleSpaceBar(
         background: Container(
@@ -151,9 +150,65 @@ body: CustomScrollView(
            ],
          );
         },
-        childCount: 20, // Number of items
+        childCount: 5, // Number of items
       ),
     ),
+    SliverToBoxAdapter(
+        child: Padding(
+          padding: const EdgeInsets.all(10),
+          child: Row(
+             children: [
+               Image.asset("images/shorts.png"),
+               const SizedBox(
+                 width: 5,
+               ),
+               const Text(
+                 maxLines: 2,
+                 overflow: TextOverflow.ellipsis,
+                 "Shorts",style: TextStyle(
+                   color: Colors.black,fontSize: 19,fontWeight: FontWeight.w600
+               ),),
+
+
+             ],
+          ),
+        ),
+    ),
+    const SliverToBoxAdapter(
+      child: SizedBox(
+        height: 5,
+      ),
+    ),
+    SliverGrid(
+      delegate: SliverChildBuilderDelegate(
+            (BuildContext context, int index) {
+          return Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Container(
+
+              height: 240,
+
+             decoration: BoxDecoration(
+                color: Colors.pink,
+               borderRadius: BorderRadius.circular(12)
+             ),
+            ),
+          );
+        },
+        childCount: 4, // Adjust this according to the number of grid items
+      ),
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2, // Number of columns in the grid
+       // Spacing between rows
+        // Spacing between columns
+      // Aspect ratio for grid items
+      ),
+    ),
+
+
+
+
+
 
 
   ],
