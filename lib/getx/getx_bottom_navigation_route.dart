@@ -1,4 +1,3 @@
-
 import 'package:get/get.dart';
 class BottomNavigationRoute extends GetxController {
 var currentIndex =0.obs;

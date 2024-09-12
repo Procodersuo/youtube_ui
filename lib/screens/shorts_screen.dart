@@ -24,7 +24,7 @@ class ShortsScreen extends StatelessWidget {
               ),
             ),
             Positioned(
-              top:MediaQuery.of(context).size.height-270,
+              top:MediaQuery.of(context).size.height-370,
               right: 10,
               child: Column(
                 children: [

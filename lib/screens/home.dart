@@ -37,19 +37,19 @@ body: CustomScrollView(
       leading: Image.asset("images/youtube.png"),
       actions: [
         const SizedBox(
-          width: 15,
+          width: 7,
         ),
         IconButton(onPressed: (){
 
         }, icon: const Icon(Icons.cast)),
         const SizedBox(
-          width: 15,
+          width: 7,
         ),
         IconButton(onPressed: (){
 
         }, icon: const Icon(Icons.notifications)),
         const SizedBox(
-          width: 15,
+          width: 7,
         ),
         IconButton(onPressed: (){
 
@@ -68,7 +68,7 @@ body: CustomScrollView(
               padding: const EdgeInsets.all(8.0),
               decoration: BoxDecoration(
 
-                color: Colors.grey.shade200,
+                color: Colors.grey.shade300,
                 borderRadius: BorderRadius.circular(10)
               ),
               child: Center(child: Text(categoriesList[index])),
@@ -131,9 +131,9 @@ body: CustomScrollView(
                              ),),
                              Row(
                                children: [
-                                 Text("Talha Shoaib . ",style: TextStyle(color: Colors.grey,fontSize: 12,fontWeight: FontWeight.w200),),
-                                 Text("4B views ",style: TextStyle(color: Colors.grey,fontSize: 12,fontWeight: FontWeight.w200),),
-                                 Text("10 minutes ago",style: TextStyle(color: Colors.grey,fontSize: 12,fontWeight: FontWeight.w200),),
+                                 Text("Talha Shoaib . ",style: TextStyle(color: Colors.grey,fontSize: 12,fontWeight: FontWeight.w400),),
+                                 Text("4B views ",style: TextStyle(color: Colors.grey,fontSize: 12,fontWeight: FontWeight.w400),),
+                                 Text("10 minutes ago",style: TextStyle(color: Colors.grey,fontSize: 12,fontWeight: FontWeight.w400),),
                                ],
                              )
 
